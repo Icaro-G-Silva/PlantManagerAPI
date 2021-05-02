@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## Welcome to Plant Manager Project
 
-You can use the [editor on GitHub](https://github.com/Icaro-G-Silva/PlantManagerAPI/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### About the project
+_Plant Manager_ is an app that helps you control your time and save yours plants' lives.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### How it works?
+Basically, you have to _register_ your own plant in the app, and tell us _when_ it's better to start advise you to _take care_ of your plants. <br>
+Along the day, our job is to _assure_ you when is better for you to go _water your plants_ as like as _how much_ you have to.
 
-### Markdown
+### More infos about the APP
+> **Soon**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Where I can read more about it?
+> [Here in the API Project's Wiki!](https://github.com/Icaro-G-Silva/PlantManagerAPI/wiki) <br>
 
-```markdown
-Syntax highlighted code block
+All the documentation about the **API** is going to be there! so, _smarten up_!
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Icaro-G-Silva/PlantManagerAPI/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### Version
+> In development
