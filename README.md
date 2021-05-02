@@ -1,9 +1,4 @@
 # Plant Manager API
-![Logo](./Assets/icon.png#icon "Logo")
-<style>
-    img[src*=icon]{width: 10%;}
-</style>
-
 > Plant Manager project by NLW5 but it's made by my way
 
 ## About the project
