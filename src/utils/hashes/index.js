@@ -1,7 +1,7 @@
-const {hasUser} = require('../hasRegister')
+const {hasUser, hasPlant} = require('../hasRegister')
 const crypto = require('crypto')
 
-async function createUserId() {
+const createUserId = async() => {
     var exist = true
     do {
         var id = crypto.randomBytes(12).toString('hex').slice(0, 12)
@@ -10,4 +10,13 @@ async function createUserId() {
     return id
 }
 
-module.exports = {createUserId}
+const createPlantId = async() => {
+    var exist = true
+    do {
+        var id = crypto.randomBytes(12).toString('hex').slice(0, 12)
+        if(!await hasPlant(id)) exist = false
+    } while(exist)
+    return id
+}
+
+module.exports = {createUserId, createPlantId}
