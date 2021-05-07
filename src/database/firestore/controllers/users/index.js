@@ -3,9 +3,7 @@ const firestore = firebase.firestore()
 const users = firestore.collection('users')
 
 const {createUserId} = require('../../../../utils/hashes')
-const {SuccessMessages, ErrorMessages} = require('../../../../utils/returnMessages')
-const success = new SuccessMessages
-const error = new ErrorMessages
+const {success, error} = require('../../../../utils/returnMessages')
 
 const create = async (req, res) => {
     const {name} = req.body
@@ -13,15 +11,15 @@ const create = async (req, res) => {
     await users.doc(id).set({
         id,
         name
-    }).then(()=>res.json(success.success()).status(200))
-    .catch(err=>res.json(error.error(err)).status(400))
+    }).then(()=>res.json(success()).status(200))
+    .catch(err=>res.json(error(err)).status(400))
 }
 
 const readSpecific = async (req, res) => {
     const {id} = req.params
     await users.doc(id).get().then(userData => {
         res.json(userData.data()).status(200)
-    }).catch(err=>res.json(error.error(err)).status(400))
+    }).catch(err=>res.json(error(err)).status(400))
 }
 
 const update = async(req, res) => {
@@ -29,14 +27,14 @@ const update = async(req, res) => {
     const {name} = req.body
     await users.doc(id).update({
         name
-    }).then(()=>res.json(success.success()).status(200))
-    .catch(err=>res.json(error.error(err)).status(400))
+    }).then(()=>res.json(success()).status(200))
+    .catch(err=>res.json(error(err)).status(400))
 }
 
 const deleteUser = async (req, res) => {
     const {id} = req.params
-    await users.doc(id).delete().then(()=>res.json(success.success()).status(200))
-    .catch(err=>res.json(error.error(err)).status(400))
+    await users.doc(id).delete().then(()=>res.json(success()).status(200))
+    .catch(err=>res.json(error(err)).status(400))
 }
 
 module.exports = {create, readSpecific, update, deleteUser}
