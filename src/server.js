@@ -4,10 +4,10 @@ const routes = require('./routes')
 const dotenv = require('dotenv')
 dotenv.config()
 
-const authMiddleware = require('./authentication/authMiddleware')
+////const authMiddleware = require('./authentication/authMiddleware')
 
 server.use(express.json())
-// server.use(authMiddleware) 
+//// server.use(authMiddleware) 
 server.use(routes)
 
 server.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
